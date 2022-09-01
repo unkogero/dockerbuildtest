@@ -1,0 +1,2 @@
+FROM ubuntu:20.04
+ADD file /base/2.0

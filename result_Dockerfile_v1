@@ -1,0 +1,2 @@
+FROM localhost/myext:1.0
+ADD file /result/file

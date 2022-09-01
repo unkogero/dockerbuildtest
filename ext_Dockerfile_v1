@@ -1,0 +1,2 @@
+FROM localhost/mybase:latest
+ADD file /ext/1.0
