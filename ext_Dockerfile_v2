@@ -1,2 +1,3 @@
 FROM localhost/mybase:latest
+ENV MYEXT=2.0
 ADD file /ext/2.0

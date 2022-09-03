@@ -1,2 +1,3 @@
 FROM ubuntu:20.04
+ENV MYBASE=2.0
 ADD file /base/2.0

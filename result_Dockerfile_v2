@@ -1,2 +1,3 @@
 FROM localhost/myext:2.0
-ADD file /result/file
+ENV MYRESULT=2.0
+ADD file /result/2.0
