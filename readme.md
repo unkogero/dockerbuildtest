@@ -231,3 +231,44 @@ Error: Package: glibc-2.26-58.amzn2.i686 (amzn2-core)
  You could try using --skip-broken to work around the problem
  You could try running: rpm -Va --nofiles --nodigest
  ```
+
+ ```
+ bash-4.2# yum --showduplicates list glibc-langpack-en.x86_64
+Loaded plugins: ovl, priorities
+7 packages excluded due to repository priority protections
+Installed Packages
+glibc-langpack-en.x86_64                                                                             2.26-56.amzn2                                                                                 installed 
+Available Packages
+glibc-langpack-en.x86_64                                                                             2.25-10.amzn2.0.1                                                                             amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-27.amzn2.0.4                                                                             amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-27.amzn2.0.5                                                                             amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-28.amzn2.0.1                                                                             amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-30.amzn2.0.1                                                                             amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-32.amzn2.0.1                                                                             amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-32.amzn2.0.2                                                                             amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-34.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-35.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-36.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-37.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-38.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-39.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-41.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-42.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-43.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-44.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-45.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-47.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-48.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-53.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-54.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-55.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-56.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-57.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-58.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-59.amzn2                                                                                 amzn2-core
+glibc-langpack-en.x86_64                                                                             2.26-60.amzn2                                                                                 amzn2-core
+bash-4.2# 
+```
+
+
+https://docs.aws.amazon.com/ja_jp/AL2/latest/relnotes/relnotes-al2.html
