@@ -1,0 +1,6 @@
+FROM ubuntu:20.04
+ENV MYBASE=1.0
+ADD file /base/1.0
+ADD file /base/2.03
+ADD file /base/2.02
+ADD file /base/3.0

@@ -2,6 +2,6 @@ FROM amazoncorretto:11.0.13
 ENV MYCORRETTO=11.0.13
 RUN yum -y install \
     glibc-langpack-ja-2.26-58.amzn2.x86_64 \
-    glibc-2.26-58.amzn2.i686 \
+    glibc-langpack-en-2.26-58.amzn2.x86_64 \
     && rm -fr /var/cache/yum/* \
     && yum clean all

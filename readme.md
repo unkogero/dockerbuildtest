@@ -1,3 +1,4 @@
+## latest check
 ```
 export DOCKER_SCAN_SUGGEST=false
 
@@ -51,9 +52,43 @@ docker run localhost/result:2.0 ls /base
 # → 2.0
 docker run localhost/result:2.0 ls /ext
 ```
+
+# search parent
+```
+D:\work\10_develop\50_docker\latest>docker history localhost/result:2.0 --no-trunc
+IMAGE                                                                     CREATED       CREATED BY                                                                    
+                      SIZE      COMMENT
+sha256:59f3dc9c204e8439df3ea4058554a8342e0eb95da0a9d1e6ab6a2a3aa982e04d   2 days ago    ADD file /result/2.0 # buildkit                                               
+                      0B        buildkit.dockerfile.v0
+<missing>                                                                 2 days ago    ENV MYRESULT=2.0                                                              
+                      0B        buildkit.dockerfile.v0
+<missing>                                                                 2 days ago    ADD file /ext/2.0 # buildkit                                                  
+                      0B        buildkit.dockerfile.v0
+<missing>                                                                 2 days ago    ENV MYEXT=2.0                                                                 
+                      0B        buildkit.dockerfile.v0
+<missing>                                                                 2 days ago    ADD file /base/2.0 # buildkit                                                 
+                      0B        buildkit.dockerfile.v0
+<missing>                                                                 2 days ago    ENV MYBASE=2.0                                                                
+                      0B        buildkit.dockerfile.v0
+<missing>                                                                 4 weeks ago   /bin/sh -c #(nop)  CMD ["bash"]                                               
+                      0B
+<missing>                                                                 4 weeks ago   /bin/sh -c #(nop) ADD file:af4cf77e6818016b697a1491101b40c71d06529ced65f36107749f099d6d4bdc in /    72.8MB
+```
+```
+docker save localhost/result:2.0 -o images/result_2.tar
+```
+![](2022-09-04-22-17-36.png)
+
+### dive
+![](2022-09-04-22-16-11.png)
+
+## yum errror
 ```
 #docker build ./ -t localhost/mycorretto1103 -f corretto_Dockerfile_v11_0_13
 ```
+
+
+
 
 ```
 docker run -it amazoncorretto:11.0.13 bash 
